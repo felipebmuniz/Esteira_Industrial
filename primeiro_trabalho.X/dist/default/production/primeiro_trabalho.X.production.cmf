@@ -1,0 +1,805 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\primeiro_trabalho.X.production.o
+cinit CODE 0 F F 15 2
+text1 CODE 0 492 492 2C 2
+text2 CODE 0 4E5 4E5 26 2
+text3 CODE 0 2AA 2AA 72 2
+text4 CODE 0 3E9 3E9 3C 2
+text5 CODE 0 365 365 46 2
+text6 CODE 0 637 637 1A 2
+text7 CODE 0 52A 52A 1E 2
+text8 CODE 0 548 548 1E 2
+text9 CODE 0 566 566 1E 2
+text10 CODE 0 584 584 1E 2
+text11 CODE 0 651 651 1A 2
+text12 CODE 0 5A2 5A2 1E 2
+text13 CODE 0 5C0 5C0 1E 2
+text14 CODE 0 5DE 5DE 1E 2
+text15 CODE 0 6C0 6C0 6 2
+text16 CODE 0 3AB 3AB 3E 2
+text17 CODE 0 31C 31C 49 2
+text18 CODE 0 69C 69C E 2
+text19 CODE 0 6AA 6AA C 2
+text20 CODE 0 6B6 6B6 A 2
+text21 CODE 0 61A 61A 1D 2
+text22 CODE 0 5FC 5FC 1E 2
+text23 CODE 0 460 460 32 2
+text24 CODE 0 67C 67C 10 2
+text25 CODE 0 425 425 3B 2
+text26 CODE 0 68C 68C 10 2
+text27 CODE 0 6C6 6C6 6 2
+text28 CODE 0 6CC 6CC 6 2
+text29 CODE 0 50B 50B 1F 2
+text30 CODE 0 4BE 4BE 27 2
+text31 CODE 0 66B 66B 11 2
+text32 CODE 0 6D2 6D2 4 2
+text33 CODE 0 24 24 D1 2
+maintext CODE 0 F5 F5 BC 2
+cstackCOMMON COMMON 1 70 70 8 1
+cstackBANK0 BANK0 1 20 20 17 1
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 37 37 C 1
+strings STRING 0 200 200 AA 2
+bssCOMMON COMMON 1 78 78 3 1
+config CONFIG 4 2007 2007 1 2
+$C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 43-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 43-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 1B1-1FF 2
+CONST 6D6-1FFF 2
+ENTRY 3-3 2
+ENTRY 1B1-1FF 2
+ENTRY 6D6-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 1B1-1FF 2
+CODE 6D6-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7B-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 1B1-1FF 2
+STRCODE 6D6-1FFF 2
+STRING 3-3 2
+STRING 1B1-1FF 2
+STRING 6D6-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\primeiro_trabalho.X.production.o
+F cinit CODE >791:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+F cinit CODE >794:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+F cinit CODE >826:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+10 cinit CODE >827:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+11 cinit CODE >828:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+12 cinit CODE >831:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+13 cinit CODE >832:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+14 cinit CODE >833:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+15 cinit CODE >834:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+16 cinit CODE >835:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+17 cinit CODE >836:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+18 cinit CODE >837:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+19 cinit CODE >838:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+1A cinit CODE >839:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+1B cinit CODE >840:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+1C cinit CODE >841:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+1D cinit CODE >842:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+1E cinit CODE >843:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+1F cinit CODE >844:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+20 cinit CODE >850:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+20 cinit CODE >852:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+21 cinit CODE >853:C:\Users\felip\AppData\Local\Temp\xcAscpc.s
+4 intentry CODE >121:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+24 text33 CODE >121:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+24 text33 CODE >124:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+2C text33 CODE >125:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+2D text33 CODE >128:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+37 text33 CODE >129:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+3B text33 CODE >132:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+44 text33 CODE >135:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+4E text33 CODE >136:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+52 text33 CODE >139:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5E text33 CODE >140:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+60 text33 CODE >144:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+68 text33 CODE >145:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+69 text33 CODE >146:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+6A text33 CODE >147:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+6E text33 CODE >148:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+72 text33 CODE >153:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+7C text33 CODE >154:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+80 text33 CODE >157:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+8C text33 CODE >158:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+8E text33 CODE >162:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+9C text33 CODE >163:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+9D text33 CODE >164:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+9E text33 CODE >165:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+A2 text33 CODE >166:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+A7 text33 CODE >170:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+B3 text33 CODE >171:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+B4 text33 CODE >172:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+B5 text33 CODE >173:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+B6 text33 CODE >174:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+BA text33 CODE >177:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+CD text33 CODE >178:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+CE text33 CODE >179:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+D0 text33 CODE >180:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+D3 text33 CODE >182:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+D3 text33 CODE >185:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+D7 text33 CODE >186:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+D8 text33 CODE >187:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+D9 text33 CODE >188:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+DA text33 CODE >190:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+DA text33 CODE >193:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+E2 text33 CODE >195:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+E7 text33 CODE >196:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+E8 text33 CODE >197:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+EA text33 CODE >197:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+EE text33 CODE >199:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+6D2 text32 CODE >56:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+66B text31 CODE >61:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+66B text31 CODE >63:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+66E text31 CODE >64:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+673 text31 CODE >65:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+676 text31 CODE >66:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+67B text31 CODE >67:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4BE text30 CODE >69:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4BF text30 CODE >73:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4C7 text30 CODE >74:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4CA text30 CODE >75:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4D0 text30 CODE >76:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4D1 text30 CODE >77:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4D7 text30 CODE >78:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4D8 text30 CODE >79:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4DE text30 CODE >80:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4DF text30 CODE >82:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+4E4 text30 CODE >83:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+50B text29 CODE >85:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+50C text29 CODE >90:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+50F text29 CODE >90:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+512 text29 CODE >90:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+518 text29 CODE >91:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+51E text29 CODE >94:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+523 text29 CODE >95:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+529 text29 CODE >96:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6CC text28 CODE >98:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6CC text28 CODE >101:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6D1 text28 CODE >102:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6C6 text27 CODE >57:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+68C text26 CODE >104:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+68F text26 CODE >106:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+690 text26 CODE >111:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+696 text26 CODE >113:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+69B text26 CODE >114:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+425 text25 CODE >201:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+428 text25 CODE >203:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+429 text25 CODE >207:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+430 text25 CODE >208:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+431 text25 CODE >212:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+438 text25 CODE >213:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+439 text25 CODE >217:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+440 text25 CODE >218:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+441 text25 CODE >222:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+448 text25 CODE >223:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+449 text25 CODE >225:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+44E text25 CODE >225:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+453 text25 CODE >225:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+456 text25 CODE >225:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+459 text25 CODE >225:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+45C text25 CODE >225:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+45F text25 CODE >226:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+67C text24 CODE >116:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+67F text24 CODE >118:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+680 text24 CODE >123:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+686 text24 CODE >125:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+68B text24 CODE >126:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+460 text23 CODE >128:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+460 text23 CODE >133:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+463 text23 CODE >135:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+465 text23 CODE >137:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+46A text23 CODE >137:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+47F text23 CODE >138:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+485 text23 CODE >139:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+48D text23 CODE >139:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+491 text23 CODE >140:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+5FC text22 CODE >83:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5FC text22 CODE >84:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+602 text22 CODE >85:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+60A text22 CODE >86:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+619 text22 CODE >87:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+61A text21 CODE >15:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+61A text21 CODE >16:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+61D text21 CODE >17:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+61E text21 CODE >18:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+61F text21 CODE >19:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+620 text21 CODE >20:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+621 text21 CODE >23:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+625 text21 CODE >24:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+627 text21 CODE >25:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+628 text21 CODE >26:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+629 text21 CODE >27:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+62A text21 CODE >34:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+62C text21 CODE >41:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+62E text21 CODE >48:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+632 text21 CODE >51:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+636 text21 CODE >52:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+6B6 text20 CODE >58:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6AA text19 CODE >189:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6AA text19 CODE >191:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6B0 text19 CODE >192:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6B5 text19 CODE >193:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+69C text18 CODE >59:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+31C text17 CODE >160:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+31C text17 CODE >163:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+321 text17 CODE >165:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+327 text17 CODE >166:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+32C text17 CODE >167:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+332 text17 CODE >168:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+337 text17 CODE >169:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+33D text17 CODE >170:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+342 text17 CODE >172:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+348 text17 CODE >173:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+34D text17 CODE >175:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+353 text17 CODE >176:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+359 text17 CODE >177:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+35F text17 CODE >178:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+364 text17 CODE >179:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3AB text16 CODE >142:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3AB text16 CODE >145:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3B0 text16 CODE >147:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3B6 text16 CODE >148:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3BB text16 CODE >149:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3C1 text16 CODE >150:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3C6 text16 CODE >151:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3CC text16 CODE >152:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3D1 text16 CODE >154:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3D7 text16 CODE >155:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3DD text16 CODE >156:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3E3 text16 CODE >157:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+3E8 text16 CODE >158:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6C0 text15 CODE >181:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6C0 text15 CODE >183:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6C0 text15 CODE >186:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+6C5 text15 CODE >187:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+5DE text14 CODE >89:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5DE text14 CODE >90:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5E4 text14 CODE >91:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5EC text14 CODE >92:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5FB text14 CODE >93:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5C0 text13 CODE >54:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5C0 text13 CODE >55:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5C6 text13 CODE >56:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5CE text13 CODE >57:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5DD text13 CODE >58:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5A2 text12 CODE >60:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5A2 text12 CODE >61:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5A8 text12 CODE >62:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5B0 text12 CODE >63:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5BF text12 CODE >64:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+651 text11 CODE >66:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+651 text11 CODE >67:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+65B text11 CODE >68:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+66A text11 CODE >69:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+584 text10 CODE >71:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+584 text10 CODE >72:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+58A text10 CODE >73:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+592 text10 CODE >74:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+5A1 text10 CODE >75:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+566 text9 CODE >77:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+566 text9 CODE >78:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+56C text9 CODE >79:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+574 text9 CODE >80:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+583 text9 CODE >81:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+548 text8 CODE >101:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+548 text8 CODE >102:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+54E text8 CODE >103:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+556 text8 CODE >104:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+565 text8 CODE >105:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+52A text7 CODE >95:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+52A text7 CODE >96:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+530 text7 CODE >97:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+538 text7 CODE >98:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+547 text7 CODE >99:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+637 text6 CODE >107:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+637 text6 CODE >108:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+641 text6 CODE >109:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+650 text6 CODE >110:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+365 text5 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+365 text5 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+369 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+36F text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+371 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+372 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+373 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+377 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+379 text5 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+37D text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+381 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+382 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+386 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+388 text5 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+38A text5 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+38E text5 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+392 text5 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+395 text5 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+398 text5 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+399 text5 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+39A text5 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+39E text5 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+3A0 text5 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+3A6 text5 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+3AA text5 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+3E9 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3E9 text4 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3EF text4 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3F3 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3F4 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3F5 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3F9 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3FB text4 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+3FF text4 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+403 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+405 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+409 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+40D text4 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+410 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+413 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+414 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+418 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+41A text4 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+420 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+424 text4 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+2AA text3 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2AD text3 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2B1 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2C4 text3 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2C8 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2CE text3 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2D4 text3 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2E7 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2FA text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+2FC text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+300 text3 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+304 text3 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+308 text3 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+311 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+317 text3 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+31B text3 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+4E5 text2 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+4E8 text2 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+4E8 text2 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+4EC text2 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+4F7 text2 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+4FA text2 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+4FC text2 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+50A text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+492 text1 CODE >112:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+492 text1 CODE >114:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+4A2 text1 CODE >117:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+4AE text1 CODE >118:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+4BD text1 CODE >119:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+F5 maintext CODE >201:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+F5 maintext CODE >202:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+F6 maintext CODE >204:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+FB maintext CODE >206:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+FC maintext CODE >209:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+101 maintext CODE >212:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+106 maintext CODE >213:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+10C maintext CODE >219:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+111 maintext CODE >220:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+112 maintext CODE >222:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+117 maintext CODE >223:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+118 maintext CODE >225:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+11D maintext CODE >226:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+11E maintext CODE >228:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+123 maintext CODE >229:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+124 maintext CODE >231:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+129 maintext CODE >232:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+12A maintext CODE >235:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+131 maintext CODE >235:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+136 maintext CODE >235:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+139 maintext CODE >235:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+13C maintext CODE >235:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+13F maintext CODE >235:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+142 maintext CODE >235:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+145 maintext CODE >237:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+14D maintext CODE >240:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+151 maintext CODE >242:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+156 maintext CODE >245:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+15F maintext CODE >248:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+165 maintext CODE >249:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+167 maintext CODE >249:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+16B maintext CODE >250:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+16D maintext CODE >250:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+171 maintext CODE >251:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+176 maintext CODE >254:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+193 maintext CODE >255:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+19D maintext CODE >258:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+1A3 maintext CODE >261:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+1A9 maintext CODE >262:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+1A9 maintext CODE >263:E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+___lwmod@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+lcd_puts@cnt 29 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__Hspace_0 6D6 0 ABS 0 - -
+__Hspace_1 7B 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__size_of_lcd_cmd 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+lcd_puts@vector 21 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+_pac_Remova ACC 0 CODE 0 text9 dist/default/production\primeiro_trabalho.X.production.o
+_set_valor 924 0 CODE 0 text1 dist/default/production\primeiro_trabalho.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+itoa@base 2E 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+_init C34 0 CODE 0 text21 dist/default/production\primeiro_trabalho.X.production.o
+_itoa 9CA 0 CODE 0 text2 dist/default/production\primeiro_trabalho.X.production.o
+_main 1EA 0 CODE 0 maintext dist/default/production\primeiro_trabalho.X.production.o
+_ps_c 37 0 BANK0 1 bssBANK0 dist/default/production\primeiro_trabalho.X.production.o
+_utoa 554 0 CODE 0 text3 dist/default/production\primeiro_trabalho.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+start 18 0 CODE 0 init C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+__size_of_init 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_itoa 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_utoa 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_lcd_en_pulse CD6 0 CODE 0 text31 dist/default/production\primeiro_trabalho.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_lcd_delay_40ms D54 0 CODE 0 text18 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_delay_40us D98 0 CODE 0 text27 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_clear D6C 0 CODE 0 text19 dist/default/production\primeiro_trabalho.X.production.o
+utoa@c 2A 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+utoa@v 28 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_clear 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_lcd_delay_1us DA4 0 CODE 0 text32 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_delay_2ms D6C 0 CODE 0 text20 dist/default/production\primeiro_trabalho.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__end_of_pac_Remova B08 0 CODE 0 text9 dist/default/production\primeiro_trabalho.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_lcd_clear D54 0 CODE 0 text19 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_en_pulse 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_cmd D38 0 CODE 0 text26 dist/default/production\primeiro_trabalho.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___lwmod@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_en_pulse CF8 0 CODE 0 text31 dist/default/production\primeiro_trabalho.X.production.o
+__end_of___lwdiv 756 0 CODE 0 text5 dist/default/production\primeiro_trabalho.X.production.o
+__end_of___lwmod 84A 0 CODE 0 text4 dist/default/production\primeiro_trabalho.X.production.o
+_INTCON B 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_OPTION_REG 81 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+___stacklo 0 0 ABS 0 - C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+___lwdiv@quotient 21 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_myIsr 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_pac_A 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_pac_B 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_pac_C 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+itoa@buf 31 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+itoa@val 2C 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+___lwmod@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\primeiro_trabalho.X.production.o
+lcd_byte_4bits@data 76 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_delay_1us 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_delay_2ms 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_esperando C34 0 CODE 0 text22 dist/default/production\primeiro_trabalho.X.production.o
+utoa@buf 2B 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+utoa@val 23 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_esperando 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__end_of_ligar_motor BF8 0 CODE 0 text14 dist/default/production\primeiro_trabalho.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+_lcd_byte_4bits A16 0 CODE 0 text29 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_byte_8bits D98 0 CODE 0 text28 dist/default/production\primeiro_trabalho.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 48 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 41E 0 STRING 0 strings dist/default/production\primeiro_trabalho.X.production.o
+___lwdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_init_4bits 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_init_8bits 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_lcd_delay_1us DAC 0 CODE 0 text32 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_delay_2ms D80 0 CODE 0 text20 dist/default/production\primeiro_trabalho.X.production.o
+_esperando BF8 0 CODE 0 text22 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_char 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_goto 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_puts 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+lcd_cmd@data 20 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__Lstack 0 0 STACK 2 stack -
+_PORTBbits 6 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_PORTCbits 7 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_pac_Remova 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 6D6 0 ABS 0 - -
+__S1 7B 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_qnt C6E 0 CODE 0 text6 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_pac_Erro 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_pac_dual 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_pac_null 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_count0 3B 0 BANK0 1 bssBANK0 dist/default/production\primeiro_trabalho.X.production.o
+utoa@base 25 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_byte_4bits A54 0 CODE 0 text29 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_byte_8bits DA4 0 CODE 0 text28 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_qnt CA2 0 CODE 0 text6 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_delay_40ms 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_delay_40us 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_lcd_char CF8 0 CODE 0 text24 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_goto 84A 0 CODE 0 text25 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_init D80 0 CODE 0 text15 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_puts 8C0 0 CODE 0 text23 dist/default/production\primeiro_trabalho.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 400 0 STRING 0 strings dist/default/production\primeiro_trabalho.X.production.o
+_lcd_cmd D18 0 CODE 0 text26 dist/default/production\primeiro_trabalho.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\felip\AppData\Local\Temp\xcAscpc.o
+__end_of_lcd_send_nibble 9CA 0 CODE 0 text30 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_char D18 0 CODE 0 text24 dist/default/production\primeiro_trabalho.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_lcd_goto 8C0 0 CODE 0 text25 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_init D8C 0 CODE 0 text15 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_puts 924 0 CODE 0 text23 dist/default/production\primeiro_trabalho.X.production.o
+lcd_byte_4bits@nibble 77 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+lcd_send_nibble@data 73 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__ptext10 B08 0 CODE 0 text10 dist/default/production\primeiro_trabalho.X.production.o
+__ptext11 CA2 0 CODE 0 text11 dist/default/production\primeiro_trabalho.X.production.o
+__ptext12 B44 0 CODE 0 text12 dist/default/production\primeiro_trabalho.X.production.o
+__ptext13 B80 0 CODE 0 text13 dist/default/production\primeiro_trabalho.X.production.o
+__ptext14 BBC 0 CODE 0 text14 dist/default/production\primeiro_trabalho.X.production.o
+__ptext15 D80 0 CODE 0 text15 dist/default/production\primeiro_trabalho.X.production.o
+__ptext16 756 0 CODE 0 text16 dist/default/production\primeiro_trabalho.X.production.o
+__ptext17 638 0 CODE 0 text17 dist/default/production\primeiro_trabalho.X.production.o
+__ptext18 D38 0 CODE 0 text18 dist/default/production\primeiro_trabalho.X.production.o
+__ptext19 D54 0 CODE 0 text19 dist/default/production\primeiro_trabalho.X.production.o
+__ptext20 D6C 0 CODE 0 text20 dist/default/production\primeiro_trabalho.X.production.o
+__ptext21 C34 0 CODE 0 text21 dist/default/production\primeiro_trabalho.X.production.o
+__ptext22 BF8 0 CODE 0 text22 dist/default/production\primeiro_trabalho.X.production.o
+__ptext23 8C0 0 CODE 0 text23 dist/default/production\primeiro_trabalho.X.production.o
+__ptext24 CF8 0 CODE 0 text24 dist/default/production\primeiro_trabalho.X.production.o
+__ptext25 84A 0 CODE 0 text25 dist/default/production\primeiro_trabalho.X.production.o
+__ptext26 D18 0 CODE 0 text26 dist/default/production\primeiro_trabalho.X.production.o
+__ptext27 D8C 0 CODE 0 text27 dist/default/production\primeiro_trabalho.X.production.o
+__ptext28 D98 0 CODE 0 text28 dist/default/production\primeiro_trabalho.X.production.o
+__ptext29 A16 0 CODE 0 text29 dist/default/production\primeiro_trabalho.X.production.o
+__ptext30 97C 0 CODE 0 text30 dist/default/production\primeiro_trabalho.X.production.o
+__ptext31 CD6 0 CODE 0 text31 dist/default/production\primeiro_trabalho.X.production.o
+__ptext32 DA4 0 CODE 0 text32 dist/default/production\primeiro_trabalho.X.production.o
+__ptext33 48 0 CODE 0 text33 dist/default/production\primeiro_trabalho.X.production.o
+___lwdiv 6CA 0 CODE 0 text5 dist/default/production\primeiro_trabalho.X.production.o
+___lwmod 7D2 0 CODE 0 text4 dist/default/production\primeiro_trabalho.X.production.o
+__pmaintext 1EA 0 CODE 0 maintext dist/default/production\primeiro_trabalho.X.production.o
+_option 3D 0 BANK0 1 bssBANK0 dist/default/production\primeiro_trabalho.X.production.o
+lcd_puts@LENGHT 23 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+_pac_Erro B08 0 CODE 0 text10 dist/default/production\primeiro_trabalho.X.production.o
+_pac_dual A90 0 CODE 0 text8 dist/default/production\primeiro_trabalho.X.production.o
+_pac_null A54 0 CODE 0 text7 dist/default/production\primeiro_trabalho.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+___lwdiv@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__end_of_pac_Erro B44 0 CODE 0 text10 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_pac_dual ACC 0 CODE 0 text8 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_pac_null A90 0 CODE 0 text7 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_ligar_motor 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_lcd_send_nibble 97C 0 CODE 0 text30 dist/default/production\primeiro_trabalho.X.production.o
+lcd_char@data 20 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__end_of__stringtab 420 0 STRING 0 strings dist/default/production\primeiro_trabalho.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 40 0 CODE 0 cinit dist/default/production\primeiro_trabalho.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+_pacotes 39 0 BANK0 1 bssBANK0 dist/default/production\primeiro_trabalho.X.production.o
+?___lwdiv 73 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+?___lwmod 73 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 924 0 CODE 0 text1 dist/default/production\primeiro_trabalho.X.production.o
+__ptext2 9CA 0 CODE 0 text2 dist/default/production\primeiro_trabalho.X.production.o
+__ptext3 554 0 CODE 0 text3 dist/default/production\primeiro_trabalho.X.production.o
+__ptext4 7D2 0 CODE 0 text4 dist/default/production\primeiro_trabalho.X.production.o
+__ptext5 6CA 0 CODE 0 text5 dist/default/production\primeiro_trabalho.X.production.o
+__ptext6 C6E 0 CODE 0 text6 dist/default/production\primeiro_trabalho.X.production.o
+__ptext7 A54 0 CODE 0 text7 dist/default/production\primeiro_trabalho.X.production.o
+__ptext8 A90 0 CODE 0 text8 dist/default/production\primeiro_trabalho.X.production.o
+__ptext9 ACC 0 CODE 0 text9 dist/default/production\primeiro_trabalho.X.production.o
+_rm_pacote 78 0 COMMON 1 bssCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 40 0 CODE 0 cinit dist/default/production\primeiro_trabalho.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+_lcd_init_4bits 638 0 CODE 0 text17 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_init_8bits 756 0 CODE 0 text16 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_send_nibble 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+lcd_puts@x 28 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\primeiro_trabalho.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+lcd_goto@col 21 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+lcd_goto@lin 24 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_init C6E 0 CODE 0 text21 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_itoa A16 0 CODE 0 text2 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_main 362 0 CODE 0 maintext dist/default/production\primeiro_trabalho.X.production.o
+__end_of_utoa 638 0 CODE 0 text3 dist/default/production\primeiro_trabalho.X.production.o
+_CMCON 9C 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__end_of_myIsr 1EA 0 CODE 0 text33 dist/default/production\primeiro_trabalho.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+_TRISE 89 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__end_of_pac_A BBC 0 CODE 0 text13 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_pac_B B80 0 CODE 0 text12 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_pac_C CD6 0 CODE 0 text11 dist/default/production\primeiro_trabalho.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\primeiro_trabalho.X.production.o
+_myIsr 48 0 CODE 0 text33 dist/default/production\primeiro_trabalho.X.production.o
+_pac_A B80 0 CODE 0 text13 dist/default/production\primeiro_trabalho.X.production.o
+_pac_B B44 0 CODE 0 text12 dist/default/production\primeiro_trabalho.X.production.o
+_pac_C CA2 0 CODE 0 text11 dist/default/production\primeiro_trabalho.X.production.o
+set_valor@valor 32 0 BANK0 1 cstackBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\primeiro_trabalho.X.production.o
+__size_of_qnt 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_byte_4bits 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__size_of_lcd_byte_8bits 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\primeiro_trabalho.X.production.o
+__pbssBANK0 37 0 BANK0 1 bssBANK0 dist/default/production\primeiro_trabalho.X.production.o
+__pstrings 400 0 STRING 0 strings dist/default/production\primeiro_trabalho.X.production.o
+__end_of_set_valor 97C 0 CODE 0 text1 dist/default/production\primeiro_trabalho.X.production.o
+__size_of_set_valor 0 0 ABS 0 - dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_init_4bits 6CA 0 CODE 0 text17 dist/default/production\primeiro_trabalho.X.production.o
+__end_of_lcd_init_8bits 7D2 0 CODE 0 text16 dist/default/production\primeiro_trabalho.X.production.o
+_char_value 3E 0 BANK0 1 bssBANK0 dist/default/production\primeiro_trabalho.X.production.o
+_ligar_motor BBC 0 CODE 0 text14 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_delay_40ms D38 0 CODE 0 text18 dist/default/production\primeiro_trabalho.X.production.o
+_lcd_delay_40us D8C 0 CODE 0 text27 dist/default/production\primeiro_trabalho.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text3 0 2AA 554 42C 2
+cstackCOMMON 1 70 70 B 1
+cstackBANK0 1 20 20 23 1
+intentry 0 4 8 1AD 2
+reset_vec 0 0 0 3 2
+strings 0 200 400 AA 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

@@ -1,0 +1,399 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+[v _itoa itoa `(*.4uc  1 e 1 0 ]
+"17
+[v _utoa utoa `(*.4uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"56 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+[v _lcd_delay_1us lcd_delay_1us `(v  1 e 1 0 ]
+"57
+[v _lcd_delay_40us lcd_delay_40us `(v  1 e 1 0 ]
+"58
+[v _lcd_delay_2ms lcd_delay_2ms `(v  1 e 1 0 ]
+"59
+[v _lcd_delay_40ms lcd_delay_40ms `(v  1 e 1 0 ]
+"61
+[v _lcd_en_pulse lcd_en_pulse `(v  1 e 1 0 ]
+"69
+[v _lcd_send_nibble lcd_send_nibble `(v  1 e 1 0 ]
+"85
+[v _lcd_byte_4bits lcd_byte_4bits `(v  1 e 1 0 ]
+"98
+[v _lcd_byte_8bits lcd_byte_8bits `(v  1 e 1 0 ]
+"104
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+"116
+[v _lcd_char lcd_char `(v  1 e 1 0 ]
+"128
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"142
+[v _lcd_init_8bits lcd_init_8bits `(v  1 e 1 0 ]
+"160
+[v _lcd_init_4bits lcd_init_4bits `(v  1 e 1 0 ]
+"181
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"189
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+"201
+[v _lcd_goto lcd_goto `(v  1 e 1 0 ]
+"15 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+[v _init init `(v  1 e 1 0 ]
+"54
+[v _pac_A pac_A `(v  1 e 1 0 ]
+"60
+[v _pac_B pac_B `(v  1 e 1 0 ]
+"66
+[v _pac_C pac_C `(v  1 e 1 0 ]
+"71
+[v _pac_Erro pac_Erro `(v  1 e 1 0 ]
+"77
+[v _pac_Remova pac_Remova `(v  1 e 1 0 ]
+"83
+[v _esperando esperando `(v  1 e 1 0 ]
+"89
+[v _ligar_motor ligar_motor `(v  1 e 1 0 ]
+"95
+[v _pac_null pac_null `(v  1 e 1 0 ]
+"101
+[v _pac_dual pac_dual `(v  1 e 1 0 ]
+"107
+[v _qnt qnt `(v  1 e 1 0 ]
+"112
+[v _set_valor set_valor `(v  1 e 1 0 ]
+"121
+[v _myIsr myIsr `II(v  1 e 1 0 ]
+"201
+[v _main main `(v  1 e 1 0 ]
+"51 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X/global.h
+[v _option option `uc  1 e 1 0 ]
+"54
+[v _count0 count0 `ui  1 e 2 0 ]
+"56
+[v _pacotes pacotes `ui  1 e 2 0 ]
+"58
+[v _rm_pacote rm_pacote `ui  1 e 2 0 ]
+"60
+[v _ps_c ps_c `ui  1 e 2 0 ]
+"62
+[v _char_value char_value `[5]uc  1 e 5 0 ]
+"59 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"166
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S87 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S96 . 1 `S87 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES96  1 e 1 @6 ]
+"278
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S108 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S117 . 1 `S108 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES117  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S214 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"357
+[u S223 . 1 `S214 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES223  1 e 1 @8 ]
+"402
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"454
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+[s S55 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S64 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S69 . 1 `S55 1 . 1 0 `S64 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES69  1 e 1 @11 ]
+"1255
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1561
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"2087
+[v _CMCON CMCON `VEuc  1 e 1 @156 ]
+"201 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"267
+} 0
+"112
+[v _set_valor set_valor `(v  1 e 1 0 ]
+{
+[v set_valor@valor valor `ui  1 p 2 18 ]
+"119
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\itoa.c
+[v _itoa itoa `(*.4uc  1 e 1 0 ]
+{
+[v itoa@buf buf `*.4uc  1 a 1 wreg ]
+[v itoa@buf buf `*.4uc  1 a 1 wreg ]
+[v itoa@val val `i  1 p 2 12 ]
+[v itoa@base base `i  1 p 2 14 ]
+[v itoa@buf buf `*.4uc  1 a 1 17 ]
+"14
+} 0
+"17
+[v _utoa utoa `(*.4uc  1 e 1 0 ]
+{
+[v utoa@buf buf `*.4uc  1 a 1 wreg ]
+"19
+[v utoa@v v `ui  1 a 2 8 ]
+"20
+[v utoa@c c `uc  1 a 1 10 ]
+"17
+[v utoa@buf buf `*.4uc  1 a 1 wreg ]
+[v utoa@val val `ui  1 p 2 3 ]
+[v utoa@base base `i  1 p 2 5 ]
+"22
+[v utoa@buf buf `*.4uc  1 a 1 11 ]
+"37
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 0 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 3 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 5 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 1 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 3 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 5 ]
+"30
+} 0
+"107 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+[v _qnt qnt `(v  1 e 1 0 ]
+{
+"110
+} 0
+"95
+[v _pac_null pac_null `(v  1 e 1 0 ]
+{
+"99
+} 0
+"101
+[v _pac_dual pac_dual `(v  1 e 1 0 ]
+{
+"105
+} 0
+"77
+[v _pac_Remova pac_Remova `(v  1 e 1 0 ]
+{
+"81
+} 0
+"71
+[v _pac_Erro pac_Erro `(v  1 e 1 0 ]
+{
+"75
+} 0
+"66
+[v _pac_C pac_C `(v  1 e 1 0 ]
+{
+"69
+} 0
+"60
+[v _pac_B pac_B `(v  1 e 1 0 ]
+{
+"64
+} 0
+"54
+[v _pac_A pac_A `(v  1 e 1 0 ]
+{
+"58
+} 0
+"89
+[v _ligar_motor ligar_motor `(v  1 e 1 0 ]
+{
+"93
+} 0
+"181 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"187
+} 0
+"142
+[v _lcd_init_8bits lcd_init_8bits `(v  1 e 1 0 ]
+{
+"158
+} 0
+"160
+[v _lcd_init_4bits lcd_init_4bits `(v  1 e 1 0 ]
+{
+"179
+} 0
+"59
+[v _lcd_delay_40ms lcd_delay_40ms `(v  1 e 1 0 ]
+{
+} 0
+"189
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+{
+"193
+} 0
+"58
+[v _lcd_delay_2ms lcd_delay_2ms `(v  1 e 1 0 ]
+{
+} 0
+"15 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+[v _init init `(v  1 e 1 0 ]
+{
+"52
+} 0
+"83
+[v _esperando esperando `(v  1 e 1 0 ]
+{
+"87
+} 0
+"128 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\lcd.c
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+"130
+[v lcd_puts@cnt cnt `uc  1 a 1 9 ]
+"131
+[v lcd_puts@x x `uc  1 a 1 8 ]
+"128
+[v lcd_puts@vector vector `*.26uc  1 p 2 1 ]
+[v lcd_puts@LENGHT LENGHT `uc  1 p 1 3 ]
+"140
+} 0
+"116
+[v _lcd_char lcd_char `(v  1 e 1 0 ]
+{
+[v lcd_char@data data `uc  1 a 1 wreg ]
+[v lcd_char@data data `uc  1 a 1 wreg ]
+"118
+[v lcd_char@data data `uc  1 a 1 0 ]
+"126
+} 0
+"201
+[v _lcd_goto lcd_goto `(v  1 e 1 0 ]
+{
+[v lcd_goto@lin lin `uc  1 a 1 wreg ]
+[v lcd_goto@lin lin `uc  1 a 1 wreg ]
+[v lcd_goto@col col `uc  1 p 1 1 ]
+[v lcd_goto@lin lin `uc  1 a 1 4 ]
+"226
+} 0
+"104
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+{
+[v lcd_cmd@data data `uc  1 a 1 wreg ]
+[v lcd_cmd@data data `uc  1 a 1 wreg ]
+"106
+[v lcd_cmd@data data `uc  1 a 1 0 ]
+"114
+} 0
+"57
+[v _lcd_delay_40us lcd_delay_40us `(v  1 e 1 0 ]
+{
+} 0
+"98
+[v _lcd_byte_8bits lcd_byte_8bits `(v  1 e 1 0 ]
+{
+"102
+} 0
+"85
+[v _lcd_byte_4bits lcd_byte_4bits `(v  1 e 1 0 ]
+{
+[v lcd_byte_4bits@data data `uc  1 a 1 wreg ]
+"87
+[v lcd_byte_4bits@nibble nibble `uc  1 a 1 7 ]
+"85
+[v lcd_byte_4bits@data data `uc  1 a 1 wreg ]
+"90
+[v lcd_byte_4bits@data data `uc  1 a 1 6 ]
+"96
+} 0
+"69
+[v _lcd_send_nibble lcd_send_nibble `(v  1 e 1 0 ]
+{
+[v lcd_send_nibble@data data `uc  1 a 1 wreg ]
+[v lcd_send_nibble@data data `uc  1 a 1 wreg ]
+"73
+[v lcd_send_nibble@data data `uc  1 a 1 3 ]
+"83
+} 0
+"61
+[v _lcd_en_pulse lcd_en_pulse `(v  1 e 1 0 ]
+{
+"67
+} 0
+"56
+[v _lcd_delay_1us lcd_delay_1us `(v  1 e 1 0 ]
+{
+} 0
+"121 E:\UFC 10° Semeste\Micros2\proteus\Primeiro_trabalho\primeiro_trabalho.X\main.c
+[v _myIsr myIsr `II(v  1 e 1 0 ]
+{
+"199
+} 0
